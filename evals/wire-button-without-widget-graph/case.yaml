@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: wire-button-without-widget-graph
+expected_outcome: |
+  A plan that keeps logic out of the widget graph: marks the button as a variable, patches BP_Board's tick via DSL Read/Edit to poll the button with an edge guard and call RestartLevel, compiles, saves and tests in PIE.

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: add-hud-label-verified
+expected_outcome: |
+  An ordered, runnable sequence that safely adds a uniquely named, top-right anchored TextBlock with LevelTitle's font, compiles and saves, then verifies in PIE with a screenshot review.

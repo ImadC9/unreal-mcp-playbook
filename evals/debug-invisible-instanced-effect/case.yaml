@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: debug-invisible-instanced-effect
+expected_outcome: |
+  A diagnosis that stops guessing and queries live state, naming the likely real causes (Static mobility, placed-actor material/property override, negative Fraction values) with runnable game-world Python and a visual verification step.

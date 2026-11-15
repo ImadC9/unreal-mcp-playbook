@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: probe-custom-port-list-actors
+expected_outcome: |
+  A runnable stdlib script that handshakes with the MCP server on port 8001, confirms the server, and lists level actors read-only via execute_python with the correct script object shape.

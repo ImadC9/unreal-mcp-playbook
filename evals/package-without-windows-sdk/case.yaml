@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: package-without-windows-sdk
+expected_outcome: |
+  A plan that packages with the stock engine executable (skip build), restricts the editor-only MCP/toolset plugin to the Editor target after backing up the uproject, runs UAT detached with log polling, and checks the packaged build beyond a launch.
