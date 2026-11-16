@@ -114,3 +114,15 @@ Read `references/packaging.md` before the first attempt. In short: confirm maps 
 - After a change, lead with what changed in the game, then what you verified and how (e.g. "all 7 levels still win at par"), then what's left to test by hand.
 - Show the evidence: send the screenshot or contact sheet, before/after when you changed visuals.
 - If a request is risky late in a deadline (e.g. rewriting the rules engine the night before submission), say so and offer the safer option.
+
+## 9. C++ projects and Live Coding
+
+Everything above also applies to a C++ project compiled through Live Coding, but long unattended sessions add their own failures. Read `references/cpp-live-coding.md` before the first compile. The short version:
+
+- **A Live Coding patch replaces code, not data.** Never change the layout of a file-static struct or a live widget class between patches, and do not trust edited static tables; add new globals or restart the editor.
+- **Tear widgets down with their world**, and recompile after every editor restart: live-coded work is not in the DLL on disk.
+- **A minimised editor does not draw widgets and ticks the game at a crawl.** Use a floating play window for captures, and tell the user a window will appear.
+- **Captures run at a few frames per second**, so per-frame offsets and input feel are unverified until the user plays at full speed. Say so.
+- **Reset test console variables and delete test saves** before reporting; the user will press Play next.
+- **Auto-rigging services ship humanoid ground clips.** Check one close-up of a rigged character with the user before rigging the cast, and keep the static mesh as a fallback.
+- **Ask for the art direction before rebuilding a look**, and report what was compiled, what was seen in a capture and what was never checked as three separate things.
